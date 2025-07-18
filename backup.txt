@@ -1,0 +1,51 @@
+// backup dashboard layout
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?? 'Sistem Antrian Rumah Sakit' ?></title>
+    <!-- CSS -->
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Bootstrap Icons -->
+    <link href="/assets/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <?php require_once __DIR__ . '/../partials/header.php' ?>
+
+    <!-- Main -->
+    <main>
+        <?= $content ?>
+    </main>
+
+    <!-- Footer -->
+    <?php require_once __DIR__ . '/../partials/footer.php' ?>
+
+    <!-- modal -->
+    <?php require_once __DIR__ . '/../partials/modal.php' ?>
+
+    <!-- Bootstrap JS -->
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    
+    <?php if (isset($dataAntrian['data'])): ?>
+        <script>
+            showModal()
+        </script>
+    <?php endif; ?>
+</body>
+
+</html>
+
+//backup main content
+<div class="w-full h-auto sticky top-0 inset-0 flex items-center justify-between py-10">
+</div>
+<div class="w-full flex-1 overflow-y-auto py-4">
+</div>

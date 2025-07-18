@@ -1,0 +1,25 @@
+{
+  "name": "lindan/project-mvc",
+  "description": "Project Pweb2",
+  "type": "project",
+  "authors": [
+    {
+      "name": "lindanmaulana",
+      "email": "linmidofficial@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "dev": "php -S localhost:8000 -t public"
+  },
+  "config": {
+    "process-timeout": 0
+  }
+}

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-soft-blue-gray: #f5f7fc;
+  --color-royal-blue: #2347fa;
+  --color-dark-blue: #343d6b;
+  --color-primary: #ff902b;
+  --color-secondary: #2f2105;
+  --color-accents: #f9d9aa;
+  --color-peach: #f6ebda;
+  --color-pale-peach: #f9d9aa;
+}
+
+@layer components {
+  .transition-global {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "aos": "^2.3.4",
+    "sweetalert2": "^11.22.2",
+    "tailwindcss": "^4.1.11"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --watch"
+  }
+}
