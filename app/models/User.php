@@ -55,7 +55,7 @@ class User extends Model
 
     public function login(string $email, string $password)
     {
-        $sql = "SELECT id, name, email, password, role FROM {$this->table} WHERE email = :email LIMIT 1";
+        $sql = "SELECT id, name, email, password, role, is_email_verified FROM {$this->table} WHERE email = :email LIMIT 1";
 
         try {
             $stmt = $this->db->prepare($sql);

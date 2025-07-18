@@ -65,6 +65,11 @@ class HomeController extends Controller
     return $this->view("/home/menu", $data, "/homeLayout");
   }
 
+  public function showLocation()
+  {
+    return $this->view("/home/ourLocation", [], "/homeLayout");
+  }
+
   public function showCart()
   {
     return $this->view('/home/cart', [], '/homeLayout');
@@ -77,13 +82,24 @@ class HomeController extends Controller
 
     return $this->view('/home/checkout', ['paymentsMethod' => $paymentsMethod], '/homeLayout');
   }
-
   public function showProfile()
   {
-    $user = $_SESSION['user'] ?? null;
+    if (!isset($_SESSION['user_id'])) {
+      header('Location: /login');
+      exit;
+    }
 
-    return $this->view('home/profile', ['user' => $user]);
+    $user = [
+      'id' => $_SESSION['user_id'],
+      'name' => $_SESSION['name'],
+      'email' => $_SESSION['email'],
+      'role' => $_SESSION['role'],
+      'is_email_verified' => $_SESSION['is_email_verified'], 
+    ];
+
+    return $this->view('/home/profile', ['user' => $user], '/homeLayout');
   }
+
 
   public function showOrder()
   {

@@ -35,6 +35,10 @@ $role = $_SESSION['role'] ?? 'Guest';
                                 class="relative text-secondary text-lg hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a>
                         </li>
                         <li>
+                            <a href="/ourlocation"
+                                class="relative text-secondary text-lg hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Our Location</a>
+                        </li>
+                        <li>
                             <a href="/menu"
                                 class="relative text-secondary text-lg hover:text-primary transition-colors duration-200
                                 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Our Menu</a>
@@ -96,7 +100,8 @@ $role = $_SESSION['role'] ?? 'Guest';
                             <a href="/" class="text-secondary hover:text-primary transition-colors duration-200 >">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="text-secondary hover:text-primary transition-colors duration-200">About Us</a>
+                            <a href="/ourlocation"
+                                class="relative text-secondary text-lg hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Our Location</a>
                         </li>
                         <li>
                             <a href="/menu" class="text-secondary hover:text-primary transition-colors duration-200 ">Our Menu</a>

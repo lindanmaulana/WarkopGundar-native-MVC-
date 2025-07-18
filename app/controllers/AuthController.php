@@ -82,6 +82,7 @@ class AuthController extends Controller
                     $_SESSION['email'] = $isLoggedInUser['email'];
                     $_SESSION['name'] = $isLoggedInUser['name'];
                     $_SESSION['role'] = $isLoggedInUser['role'];
+                    $_SESSION['is_email_verified'] = $isLoggedInUser['is_email_verified'];
 
 
                     if ($isLoggedInUser['role'] == "admin") {

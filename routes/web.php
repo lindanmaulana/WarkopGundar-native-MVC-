@@ -23,6 +23,8 @@ Router::add("POST", "/login", AuthController::class, 'login');
 Router::add("POST", "/logout", AuthController::class, 'logout');
 
 Router::add('GET', '/menu', HomeController::class, 'showMenu');
+Router::add('GET', '/ourlocation', HomeController::class, 'showLocation');
+Router::add('GET', '/profile', HomeController::class, 'showProfile');
 Router::add('GET', '/cart', HomeController::class, 'showCart');
 Router::add('GET', '/checkout', HomeController::class, 'showCheckout');
 Router::add('GET', '/order', HomeController::class, 'showOrder');
